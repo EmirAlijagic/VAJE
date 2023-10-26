@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "e8f7a83c-6f7b-4220-b459-0dadd98db0d9",
+		"name": "TP-vaja4-64200455",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30765751"
+	},
+	"item": [
+		{
+			"name": "get_vaje",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get_vaje_slika",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get_postman_ime",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get_postman_priimek",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
