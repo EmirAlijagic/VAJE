@@ -1,0 +1,34 @@
+@startuml
+
+(Ustvarjanje)
+(Posodabljanje)
+(Brisanje)
+(Pregled)
+(Prijava)
+(Sinhronizacija)
+(Upravljanje)
+(Avtentikacija)
+(Zagotavljanje)
+
+Uporabnik
+API
+
+Uporabnik -- Ustvarjanje
+Uporabnik -- Posodabljanje
+Uporabnik -- Brisanje
+Uporabnik -- Pregled
+Uporabnik -- Prijava
+Uporabnik -- Sinhronizacija
+Uporabnik -- Upravljanje
+
+API -- Avtentikacija
+API -- Zagotavljanje
+
+Sinhronizacija -- Ustvarjanje
+Sinhronizacija -- Posodabljanje
+Sinhronizacija -- Brisanje
+Sinhronizacija -- Prijava
+Sinhronizacija -- Avtentikacija
+Sinhronizacija -- Zagotavljanje
+
+@enduml
