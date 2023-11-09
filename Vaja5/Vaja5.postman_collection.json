@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "a79609f8-d2de-481d-af9a-b85d482a7b7d",
+		"name": "Vaja5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30765751"
+	},
+	"item": [
+		{
+			"name": "get_onair",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/onair/val202",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"onair",
+						"val202"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/weather/getArso?client_id=8c5205a95060a482f0fc96b9162d9e3f&location=all",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"weather",
+						"getArso"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "location",
+							"value": "all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/misc/time",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"misc",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_sections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/poll/getSections",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"poll",
+						"getSections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_getPolls",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/poll/getPolls?sectionId=31&pageSize=20",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"poll",
+						"getPolls"
+					],
+					"query": [
+						{
+							"key": "sectionId",
+							"value": "31"
+						},
+						{
+							"key": "pageSize",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_news_getsections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/news/getSections?client_id=8c5205a95060a482f0fc96b9162d9e3f",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"getSections"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/news/getNews?client_id=8c5205a95060a482f0fc96b9162d9e3f&section=3&pageSize=10",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"getNews"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "section",
+							"value": "3"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rtvslo.si/news/getStats?client_id=8c5205a95060a482f0fc96b9162d9e3f&section=3&type=rating ",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"getStats"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "section",
+							"value": "3"
+						},
+						{
+							"key": "type",
+							"value": "rating "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"jsonrpc\": \"2.0\",\r\n\r\n  \"method\": \"eth_blockNumber\",\r\n\r\n  \"params\": [],\r\n\r\n  \"id\": 1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/be54f94115964458a3102e055fb3d071",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"be54f94115964458a3102e055fb3d071"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\"0x11acf55\",true],\r\n    \"id\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/be54f94115964458a3102e055fb3d071",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"be54f94115964458a3102e055fb3d071"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
