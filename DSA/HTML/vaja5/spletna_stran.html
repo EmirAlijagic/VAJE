@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<style>
+body {
+    background-color: rgb(119, 119, 119);
+    text-align: center;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 32;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 28;
+}
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+.background {
+    display:flex;
+}
+.first_background {
+    display: flex;
+}
+.container {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-style: dotted;
+}
+</style>
+</head>
+<body>
+<div>
+    <div class="first_background">
+        <div class="container">
+            <h5>Graf svetlobe</h5>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2321553/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+        <div class="container">
+            <h5>Graf temperature</h5>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2321553/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+    </div>
+    <div class="first_background">
+        <div class="container">
+        <img src="https://f005.backblazeb2.com/file/vajaa5/SLO-logo-FE-lezeci-svetla-podlaga_crop.png">
+        </br>
+        <a href="opisi.html" class="button">Prikaži opis</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
